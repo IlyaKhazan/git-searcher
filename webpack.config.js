@@ -13,6 +13,7 @@ module.exports = {
     port: 3000,
     watchFiles: ['./src/*'],
   },
+  resolve: { extensions: ['.js', '.jsx'] },
   plugins: [new HTMLWebpackPlugin({ template: './src/index.html' }), new CleanWebpackPlugin()],
   module: {
     rules: [
