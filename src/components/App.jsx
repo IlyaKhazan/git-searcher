@@ -1,10 +1,21 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Main from './Main/Main';
+import styles from './App.module.less';
 
 const App = () => {
+  const dispatch = useDispatch();
+
   return (
-    <div>
-      <h1>12jhkjh3</h1>
-    </div>
+    <BrowserRouter>
+      <div className={styles.container}>
+        <Routes>
+          <Route path="" element={<Main />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 
