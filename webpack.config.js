@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
   },
+  devtool: 'eval-source-map',
   devServer: {
     port: 3000,
     watchFiles: ['./src/*'],
